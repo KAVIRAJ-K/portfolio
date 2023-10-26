@@ -1,0 +1,181 @@
+<!DOCUTYPE html>
+<html>
+<head>
+	<title> KAVIRAJ - Portfolio</title>
+	<style>
+             body{
+		font-family: Times New Roman, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: DodgerBlue;
+	     }
+
+	     header {
+                 background-color: red;
+		 color: #fff;
+		 text-align: center;
+		 padding: 2rem 0;
+		 position: relative; /* Add this */
+	     }
+
+	     .header-content h1 {
+		font-size: 2.5rem;
+	     }
+
+	     /* add styles for the round profile picture */
+	     .profile-picture {
+		width: 100px; / the * Adjust the size as needed */
+		height: 100px;
+		border-radius: 25%; /* Create a circular shape */
+		object-fit: cover; /* To ensure the image fills the circular area */
+		position: absolute; /* Add this */
+		top: 75px; /* Adjust top position as needed */
+		left: 75px; /* Adjust left position as needed */	     
+	     }
+
+	     nav {
+                background-color: navy;
+                color: #fff;
+                text-align: center;
+	     }
+
+	     nav ul { 
+		list-style-type: none;
+                padding: 0;
+             }
+
+             nav ul li {
+                display: inline;
+		margin: 0 20px;
+ 	     }
+
+	     nav ul li a{
+                taxt-decoration: none;
+		color: #fff;
+             }
+
+             .section-content {
+		background-color: #f0957e;
+		padding: 2rem;
+		margin: 1rem;
+		border-radius: 20px;
+		box-shadow: 0 0 10px rgba(19, 18, 18, 0.1);
+             }
+   
+     	     .download-button {
+		background-color: indigo;
+		color: #fff;
+		padding: 0.5rem 1rem;
+		text-decoration: none;
+  		border-radius: 20px;
+		display: inline-block;
+		margin-top: 10px;	
+              }
+
+              .download-button:hover {
+                background-color: MediumPurple;
+              }
+
+              footer {
+ 		text-align: center;
+		padding: 1rem 0;
+		background-color: MidnightBlue;
+		color: #fff;
+              }
+
+	      ul {
+		list-style-type: disc;
+		padding-left: 20px;
+	      }
+	  </style>
+</head>  	
+<body>
+    <header>
+        <div class="header-content">
+	<!-- Add your profile picture here -->
+	<img src="img1.jpeg" alt="Your Profile Picture" class="profile-picture">
+	<h1>Kaviraj Karthikeyan</h1>
+        <p>Passionate on Programming</p>
+	</div>
+    </header>
+
+	<nav>
+  	   <ul>
+		<li><a href="#about">About</a></li>
+		<li><a href="#education">Education</a></li>
+		<li><a href="#skills">Skills</a></li>
+		<li><a href="#projects">Projects</a></li>
+		<li><a href="#resume">Resume</a></li>
+	   </ul>
+        </nav>
+
+
+	<section id="about">
+		<div class="section-content">
+			<h2>About Me</h2>
+			<p>Hello Friends! This is Kaviraj K and i am a Computer Appication student.</p>
+		<div>
+	</section>
+
+	<section id="education">
+		<div class="section-content">
+		<h2>B.CA.</h2>
+		<p>Thanthai Periyar Govt.Arts & Science College - Tiruchirappalli-620 023</p>
+		</div>
+	</section>
+	
+	<section id="skills">
+		<div class="section-content">
+                    <h2>Skills</h2>
+		    <ul>
+			<li>HTML</li>
+			<li>C Language</li>
+			<li>Java Script</li>
+			<li>Python</li>
+  		    </ul>
+		</div>
+	</section>
+
+	<section id="projects">
+		<div class="section-content">
+			<h2>Projects</h2>
+			<ul>
+			    <li><a href="#">Project 1</a></li>
+			    <li><a href="#">Project 2</a></li>
+			    <!-- Add more project links here -->
+			</ul>
+		</div>
+	</section>
+
+	<section id="resume">
+		<center>
+		<div class="section-content">
+			<a href="file:///C:/Users/jega/Desktop/K.%20Kaviraj.pdf"><h2>Resume</h2></a>
+			<a href="https://drive.google.com/file/d/155GzvkBZhKr3zI-dy0gfII5Txtjh7TLj/view?usp=drivesdk" class="download-button">Download CV</a>
+		</div>
+		</center>
+
+	<footer>
+		<p>&copy; 2023 Kaviraj</p>
+	</footer>
+
+	<script>
+		// Smooth scrolling to section when clicking on navigation links
+		document.querySelection('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function(e) {
+				e.preventDefault();
+
+			const targetId = this.getAttribute('href").substring(1);
+			const targetElement = document.getElementById(targetId);
+			
+			if (targetElement) {
+				window.scrollTo({
+					top: targetElement.offsetTop,
+					behavior: 'smooth'
+				});
+			}
+                        });
+		});
+	</script>
+</body>
+</html>
